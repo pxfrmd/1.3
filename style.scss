@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'TT Lakes';
   src: url("fonts/TTLakes-Regular.woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'TT Lakes';
   src: url('fonts/TTLakes-Bold.woff');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -163,9 +163,7 @@ button {
   margin-top: 16px;
 }
 
-.header-icon__label {
-  display: none;
-}
+
 
 span {
   font-family: "TT Lakes", "Arial", sans-serif;
@@ -174,7 +172,7 @@ span {
   margin-left: 10px;
   margin-bottom:  16px;
 }
-.header__icon-label {
+.header-icon__label {
   display:none;
 }
 
@@ -226,7 +224,7 @@ span {
   .header-button__checkstatus {
     margin-right: 32px;
   }
-  .header-button__icon-label {
+  .header-icon__label {
     display: inline-block;
     margin-right: 8px;
   }
