@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "TT Lakes", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul::-webkit-scrollbar {
+  width: 0;
+}
+
+button,
+p,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  padding: 24px 16px;
+  border-bottom: 1px solid #D9FFF5;
+}
+
+.header-button__left-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button__right-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 51px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.header-line--768px {
+  border-left: 2px solid #EAEAEA;
+  border-radius: 2px;
+  height: 36px;
+  margin-right: 7%;
+}
+
+.header-line--320px {
+  border-left: 2px solid #EAEAEA;
+  border-radius: 2px;
+  height: 36px;
+  margin-right: 7%;
+}
+
+.header-button__repair {
+  position: relative;
+}
+
+.wrapper .header-button__repair,
+.wrapper .header-button__checkstatus {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.nav-item {
+  list-style: none;
+  color: #7E7E82;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  size: 16px;
+}
+
+.nav .nav-item:hover {
+  border: 2px solid #B8FFEC;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.text {
+  margin: 0 16px;
+}
+
+h1 {
+  position: relative;
+  margin: 24px 16px;
+  margin-right: auto;
+}
+
+.header-button--768px {
+  display: none;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border-radius: 0 6px 6px 0;
+  left: -16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+}
+
+.arrows img {
+  margin-left: 16px;
+}
+
+.bottom-img {
+  margin: 16px 0 32px 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.read-next {
+  display: block;
+  text-align: start;
+  margin-top: 16px;
+}
+
+.header-icon__label {
+  display: none;
+}
+
+span {
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+
+.header__icon-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header-button--768px {
+    display: flex;
+  }
+  .text-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
+  .bottom-img {
+    border-radius: 10px 0 0 10px;
+    margin-left: 48px;
+  }
+  section {
+    margin: 0 40px;
+  }
+  h1 {
+    margin-left: 40px;
+    margin-bottom: 32px;
+  }
+  h1::before {
+    left: -40px;
+  }
+  .nav {
+    margin-left: 40px;
+  }
+  .read-next {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1120px) {
+  .wrapper .header-button__repair,
+.wrapper .header-button__checkstatus {
+    display: inline-block;
+  }
+  .header-button__checkstatus {
+    margin-right: 32px;
+  }
+  .header-button__icon-label {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  header {
+    display: none;
+  }
+  h1 {
+    display: block;
+    margin-top: 42px;
+    margin-bottom: 8px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .bottom-img {
+    width: 531px;
+    margin-top: 0;
+  }
+  .text {
+    max-width: 490px;
+  }
+  .nav {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
