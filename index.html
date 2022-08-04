@@ -7,43 +7,47 @@
 
 <body>
 <header>
+    <div class="header-wrapper">
     <div class="header header-button__left-icons">
-    <button><img class="icon header-button__icon" src="icons/burger.png" alt="Меню"></button>
-    <div class="header-line header-line--768px"></div>
+    <button class='header-button burger'><!--<img class="icon header-button__icon" src="icons/burger_svg.svg" alt="Меню">--></button>
+    <!--<div class="header-line header-line--768px"></div>-->
     <img class="header-logo" src="icons/logo.svg" alt="Логотип" > </div>
 
     <div class="header-button__right-icons">
 
-    <button class="header-button--768px"><img class="icon header-button__icon" src="icons/call.png"></button>
-    <button class="header-button--768px"><img class="icon header-button__icon" src="icons/chat.png"></button>
-    <button class="header-button--768px"><img class="icon header-button__icon" src="icons/profile.png"></button>
+    <button class="header-button call header-button--768px"><!--<img class="icon header-button__icon" src="icons/call_svg.svg">--></button>
+    <button class="header-button chat header-button--768px"><!--<img class="icon header-button__icon" src="icons/chat_svg.svg">--></button>
+    <button class="header-button profile header-button--768px"><!--<img class="icon header-button__icon" src="icons/profile_svg.svg">--></button>
 
 
-     <div class="header-line header-line--320px"></div>
-        <button> <span class="header-icon__label">Оставить заявку</span> <img class="icon header-button__repair" src="icons/repair.png" alt="Ремонт"></button>
-        <button> <span class="header-icon__label">Статус ремонта</span><img class="icon header-button__checkstatus" src="icons/checkstatus.png" alt="Проверить статус заказа"></button>
+        <!-- <div class="header-line header-line--320px"></div>-->
+        <button class="header-button repair header-button--320px"><!--<img class="icon header-button__repair" src="icons/repair_svg.svg" alt="Ремонт">--></button>
+        <button class="header-button checkstatus header-button--320px"><!--<img class="icon header-button__checkstatus" src="icons/checkstatus_svg.svg" alt="Проверить статус заказа">--></button>
+    </div>
     </div>
 </header>
 
-<main>
+<main class="main">
     <div class ='wrapper'>
-    <h1>Услуги и сервисы</h1>
+    <h1 class='main-title'>Услуги и сервисы</h1>
     <div class="wrapper__buttons-top">
-        <span class="header__icon-label">Оставить заявку</span> <button><img class="icon header-button__repair" src="icons/repair.png" alt="Ремонт"></button>
-        <span class="header__icon-label">Статус ремонта</span><button><img class="icon header-button__checkstatus" src="icons/checkstatus.png" alt="Проверить статус заказа"></button>
+        <label class="header__icon-label"><span>Оставить заявку</span><button class="header-button repair header-button--1200px"> <!--<img class="icon header-button__repair" src="icons/repair_svg.svg" alt="Ремонт">--></button> </label>
+        <label class="header__icon-label"><span>Статус ремонта</span><button class="header-button checkstatus header-button--1200px">  <!--<img class="icon header-button__checkstatus" src="icons/checkstatus_svg.svg" alt="Проверить статус заказа">--></button></label>
     </div>
     </div>
 <nav>
     <ul class="nav">
-        <li class="nav-item nav-item__min-width768">Ремонтируемые бренды</li>
-        <li class="nav-item">Ремонтируемые устройства</li>
-        <li class="nav-item">Цены на услуги</li>
-        <li class="nav-item">Адреса сервисных центров</li>
-        <li class="nav-item">Специальные цены</li>
-        <li class="nav-item">Отзывы</li>
+        <li class="nav-item nav-item__min-width768"><a class="nav-link" href="#">Ремонтируемые бренды</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Ремонтируемые устройства</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Цены на услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Адреса сервисных центров</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Специальные цены</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
     </ul>
 </nav>
-    <section>
+
+    <article class="main-article">
+
     <div class="text-block">
         <div class="text">
     <p class="text__320px"> Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -53,7 +57,7 @@
     <button class="read-next"><img class='arrows' src="icons/expand2.png" alt=""> <span class="button-text">Читать далее</span>
     </button> </div>
     <img class="bottom-img" src='img/cps_img.jpg' alt="Вывеска"></div>
-    </section>
+    </article>
 </main>
 <footer>
 
