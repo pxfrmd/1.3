@@ -30,12 +30,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-ul::-webkit-scrollbar,
+ul::-webkit-scrollbar
  {
   width: 0;
 }
-
-
 
 button,
 p,
